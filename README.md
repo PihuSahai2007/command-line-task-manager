@@ -1,24 +1,34 @@
-# command-line-task-manager
-Python app to add, complete, delete, and list tasks saved to a file
-Command-Line Task Manager (Python)
-A menu-driven command-line app to add, list, complete, and delete tasks. Data persists in tasks.json.
-Run
-Requires Python 3.9+ and no third-party packages. In a terminal opened in this folder:
-python task_manager.py
-On some systems, use python3 task_manager.py.
+Command-Line Task Manager: A Python program for managing a to-do list from the terminal. Tasks are saved to a file, so they are still there the next time you run it.
+
 Features
-Functions split into focused responsibilities
-Lists and dictionaries for task data
-JSON file persistence
-Validation for blank titles and invalid IDs
-Handles missing or malformed saved data
-Try
-List sample tasks.
-Add a task, then list it.
-Try a blank title.
-Complete a task and restart the program.
-Try a non-numeric ID and a nonexistent ID.
-Design choices
-JSON is human-readable and available in Python's standard library. Functions separate persistence, lookup, user input, and the menu. Possible extensions: due dates, priorities, search, unit tests, and backup files.
-testing/validations
-result sets
+Add new tasks
+Complete tasks when they are done
+Delete tasks you no longer need
+List all tasks and their status
+Saves automatically to a file so tasks carry over between uses
+Input validation so invalid entries (for example, a task number that doesn't exist) show a helpful message instead of crashing
+
+How to Run
+Install Python 3.
+Download or clone this repository.
+In a terminal, go to the project folder and run:
+python [your_file_name].py
+
+How It Works
+Functions break the program into small, reusable pieces (one for each action).
+Lists and dictionaries store each task and its details, such as its description and whether it is complete.
+File handling reads tasks when the program starts and writes them back after every change. Data is stored in [tasks.json / tasks.txt].
+Input validation checks user input before acting on it.
+
+What I Learned
+Organizing a program into functions makes it easier to test and change.
+Saving data to a file turns a script into something genuinely useful.
+Planning for bad input early prevents most bugs.
+
+Ideas for Next Steps
+Add due dates and priority levels
+Sort and filter tasks
+Edit an existing task
+Add automated tests
+
+Author: Pihu Sahai, Computer Science student, University of Michigan
