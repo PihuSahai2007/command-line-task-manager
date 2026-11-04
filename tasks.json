@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Review internship postings",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Update project README",
+    "completed": true
+  }
+]
